@@ -33,9 +33,9 @@ expdp/impdp由于源数据版本高于目标数据库版本，遭遇ORA-39001、
 **源端数据库版本11.2.0.1.0,目标端数据库版本11.1.0.7.0，源端数据库版本高于目标端数据库版本，源端导出数据时加上目标端version**     
 # 代码（主要是version这个点）
     D:\OraData>expdp system/oracle tables=scott.bx_users,scott.bx_books,scott.bx_book_ratings directory=dirData dumpfile=lin.dmp version=11.1.0.7.0    
-![微信图片]()    
+![微信图片](https://github.com/lucklydog/linsir-learnlog/blob/master/oracle%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/image/oracle2.png?raw=true)    
 ***
 **再次导入成功**     
 # 代码
     D:\OraData>impdp scott/tiger directory=dirData dumpfile=lin.dmp    
-![微信图片3]()    
+![微信图片3](https://github.com/lucklydog/linsir-learnlog/blob/master/oracle%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/image/oracle3.png?raw=true)    
