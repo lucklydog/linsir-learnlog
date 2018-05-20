@@ -10,8 +10,7 @@ expdp/impdp由于源数据版本高于目标数据库版本，遭遇ORA-39001、
     With the Partitioning, OLAP, Data Mining and Real Application Testing options   
     ORA-39001: 参数值无效   
     ORA-39000: 转储文件说明错误   
-    ORA-39142: 版本号 3.1 (在转储文件 "d:\OraData\scott_bx.dmp" 中) 不兼容          
-________    
+    ORA-39142: 版本号 3.1 (在转储文件 "d:\OraData\scott_bx.dmp" 中) 不兼容              
 * 查阅资料知道是因为源数据版本高于目标数据库版本，于是查阅了我的数据库的版本   
 **查阅版本代码1**      
     D:\OraData>sqlplus -version     
