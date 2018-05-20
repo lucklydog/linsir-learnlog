@@ -17,7 +17,7 @@ expdp/impdp由于源数据版本高于目标数据库版本，遭遇ORA-39001、
     SQL*Plus: Release 11.1.0.7.0 - Production
 ***     
 果然与源数据不一致，源数据的数据库版本为11.2.0.1.0      
-**查阅代码2**
+## xing
         D:\OraData>sqlplus sys/oracle as sysdba      
         SQL> select * from v$version;
         BANNER   
