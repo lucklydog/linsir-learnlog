@@ -13,15 +13,15 @@ expdp/impdp由于源数据版本高于目标数据库版本，遭遇ORA-39001、
     ORA-39142: 版本号 3.1 (在转储文件 "d:\OraData\scott_bx.dmp" 中) 不兼容       
 ________    
 * 查阅资料知道是因为源数据版本高于目标数据库版本，于是查阅了我的数据库的版本   
-**查阅版本代码1**   
-    D:\OraData>sqlplus -version
-    SQL*Plus: Release 11.1.0.7.0 - Production      
+**查阅版本代码1**      
+    D:\OraData>sqlplus -version     
+    SQL*Plus: Release 11.1.0.7.0 - Production
+    ***     
 果然与源数据不一致，源数据的数据库版本为11.2.0.1.0      
 **查阅代码2**    
     D:\OraData>sqlplus sys/oracle as sysdba  
     SQL> select * from v$version;  
-    BANNER  
-    --------------------------------------------------------------------------------   
+    BANNER   
     Oracle Database 11g Enterprise Edition Release 11.1.0.7.0 - 64bit Production   
     PL/SQL Release 11.1.0.7.0 - Production   
     CORE    11.1.0.7.0      Production   
