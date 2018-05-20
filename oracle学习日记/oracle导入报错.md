@@ -18,13 +18,13 @@ expdp/impdp由于源数据版本高于目标数据库版本，遭遇ORA-39001、
 ***     
 果然与源数据不一致，源数据的数据库版本为11.2.0.1.0      
 **查阅代码2**    
-    `D:\OraData>sqlplus sys/oracle as sysdba      
-    SQL> select * from v$version;
-    BANNER   
-    Oracle Database 11g Enterprise Edition Release 11.1.0.7.0 - 64bit Production   
-    PL/SQL Release 11.1.0.7.0 - Production   
-    CORE    11.1.0.7.0      Production  
-    TNS for 64-bit Windows: Version 11.1.0.7.0 - Production   
-    NLSRTL Version 11.1.0.7.0 - Production`      
+        D:\OraData>sqlplus sys/oracle as sysdba      
+        SQL> select * from v$version;
+        BANNER   
+        Oracle Database 11g Enterprise Edition Release 11.1.0.7.0 - 64bit Production   
+        PL/SQL Release 11.1.0.7.0 - Production   
+        CORE    11.1.0.7.0      Production  
+        TNS for 64-bit Windows: Version 11.1.0.7.0 - Production   
+        NLSRTL Version 11.1.0.7.0 - Production      
 ***  
 以上两种查找方式不同，结果一致  
